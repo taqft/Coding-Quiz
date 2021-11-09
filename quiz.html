@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Code Quiz</title>
 </head>
 
@@ -17,12 +17,14 @@
         <p>Seconds left: <span id="timer"></span></p>
     </header>
     <div class="wrapper">
-        <div id="question-container">
+        <div id="container">
             <h2 id="question-title"></h2>
-            <button type="button" class="quiz-button" id="q1" data-answer="false"></button>
-            <button type="button" class="quiz-button" id="q2" data-answer="false"></button>
-            <button type="button" class="quiz-button" id="q3" data-answer="false"></button>
-            <button type="button" class="quiz-button" id="q4" data-answer="false"></button>
+            <ul>
+                <li data-answer="false"></li>
+                <li data-answer="false"></li>
+                <li data-answer="false"></li>
+                <li data-answer="false"></li>
+            </ul>
             <hr>
             <span id="result"></span>
         </div>
