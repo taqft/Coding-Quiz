@@ -27,7 +27,6 @@ let currentQuestion = 0;
 let qTitle = document.querySelector("#question-title");
 let qContainer = document.querySelector("#container");
 let rSpan = document.querySelector("#result");
-let e;
 
 // Insert the question into the header
 qTitle.innerHTML = questions[currentQuestion].question;
