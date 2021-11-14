@@ -8,6 +8,11 @@
     user-select: none;
 }
 
+input {
+    width: 150px;
+    margin-right: 10px;
+}
+
 .page-header {
     display: flex;
     width: 100%;
@@ -17,12 +22,12 @@
     align-items: center;
 }
 
-.wrapper {
+#wrapper {
     display: flex;
     justify-content: space-around;
 }
 
-header a {
+a {
     text-decoration: none;
 }
 
@@ -38,9 +43,11 @@ button {
 ul {
     width: auto;
     list-style-type: none;
+    padding: none;
 }
 
-li {
+li,
+button {
     width: fit-content;
     padding: 0.3em 0.75em;
     margin: 0 0.1em 0.1em 0;
@@ -56,12 +63,25 @@ li {
     transition: all 0.2s;
 }
 
-li:hover {
+li:hover,
+button:hover {
     border-color: rgba(0, 0, 5, 1);
     cursor: pointer;
 }
 
-.container {
+#highscores-list li {
+    width: 250px;
+    padding: none;
+    margin: 0.1em auto;
+}
+
+#highscores-list {
+    display: flex;
+    flex-direction: column;
+    padding: none;
+}
+
+#container {
     width: 450px;
     text-align: center;
 }
